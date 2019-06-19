@@ -1,0 +1,25 @@
+{
+  "name": "changelog-publish",
+  "version": "1.0.0",
+  "description": "Move unreleased changes from CHANGELOG.md into a new release",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "flow",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "bin": {
+    "changelog-publish": "./bin/changelog-publish"
+  },
+  "author": "Alex Dytrych <alex@dytry.ch>",
+  "license": "MIT",
+  "devDependencies": {
+    "flow-bin": "^0.101.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "mdast-util-to-string": "^1.0.6",
+    "remark": "^10.0.1"
+  }
+}

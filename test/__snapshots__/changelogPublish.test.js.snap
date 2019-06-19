@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`changelogPublish fixture: empty.md 1`] = `
+Object {
+  "isValid": false,
+  "message": "Changelog must have an 'Unreleased' section",
+}
+`;
+
+exports[`changelogPublish fixture: no-section-unreleased.md 1`] = `
+Object {
+  "isValid": false,
+  "message": "Changelog must have an 'Unreleased' section",
+}
+`;
+
+exports[`changelogPublish fixture: no-title.md 1`] = `
+Object {
+  "changelog": "This is a changelog!
+
+## [Unreleased]
+
+## [1.2.3] - 2019-06-20
+
+## [1.0.0] - 2019-06-19
+
+### Added
+
+-   Something
+",
+  "isValid": true,
+}
+`;
+
+exports[`changelogPublish fixture: no-versions.md 1`] = `
+Object {
+  "changelog": "# Changelog
+
+This is a changelog!
+
+## [Unreleased]
+
+## [1.2.3] - 2019-06-20
+
+-   Something
+",
+  "isValid": true,
+}
+`;
+
+exports[`changelogPublish fixture: valid.md 1`] = `
+Object {
+  "changelog": "# Changelog
+
+This is a changelog!
+
+## [Unreleased]
+
+## [1.2.3] - 2019-06-20
+
+-   Something
+
+## [1.2.0] - 2019-06-19
+
+-   Something else
+",
+  "isValid": true,
+}
+`;
