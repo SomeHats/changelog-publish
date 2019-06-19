@@ -1,10 +1,11 @@
 {
   "name": "changelog-publish",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Move unreleased changes from CHANGELOG.md into a new release",
   "main": "index.js",
   "scripts": {
     "pretest": "flow",
+    "version": "./bin/changelog-publish && git add CHANGELOG.md",
     "test": "jest",
     "test:watch": "jest --watch"
   },
