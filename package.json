@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pretest": "flow",
-    "version": "./bin/changelog-publish && prettier --write CHANGELOG.md && git add CHANGELOG.md",
+    "version": "./bin/changelog-publish 'https://github.com/somehats/changelog-publish' && prettier --write CHANGELOG.md && git add CHANGELOG.md",
     "release": "np",
     "test": "jest",
     "test:watch": "jest --watch"
