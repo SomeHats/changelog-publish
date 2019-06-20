@@ -1,6 +1,6 @@
 {
   "name": "changelog-publish",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Move unreleased changes from CHANGELOG.md into a new release",
   "main": "index.js",
   "scripts": {
