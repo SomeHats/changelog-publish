@@ -24,7 +24,7 @@ In your package.json add a `version` entry under `scripts`:
 ```json
 {
   "scripts": {
-    "version": "changelog-publish && git add CHANGELOG.md"
+    "version": "changelog-publish <your github URL> && git add CHANGELOG.md"
   }
 }
 ```
