@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
-## [1.0.0] - 2019-06-20
+- Add proper diff link generation support
 
--   Initial version!
+## [1.0.0](https://github.com/somehats/changelog-publish/releases/tag/v1.0.0) - 2019-06-20
+
+- Initial version!

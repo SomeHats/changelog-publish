@@ -7,6 +7,30 @@ Object {
 }
 `;
 
+exports[`changelogPublish fixture: many.md 1`] = `
+Object {
+  "changelog": "# Changelog
+
+This is a changelog!
+
+## [Unreleased](https://github.com/somehats/changelog-publish/compare/v1.2.3...HEAD)
+
+## [1.2.3](https://github.com/somehats/changelog-publish/compare/v1.2.1...v1.2.3) - 2019-06-20
+
+-   Something
+
+## [1.2.1](https://github.com/somehats/changelog-publish/compare/v1.2.0...v1.2.1) - 2019-06-19
+
+-   Something else
+
+## [1.2.0](https://github.com/somehats/changelog-publish/releases/tag/v1.2.0) - 2019-06-19
+
+-   Something else
+",
+  "isValid": true,
+}
+`;
+
 exports[`changelogPublish fixture: no-section-unreleased.md 1`] = `
 Object {
   "isValid": false,
@@ -18,11 +42,11 @@ exports[`changelogPublish fixture: no-title.md 1`] = `
 Object {
   "changelog": "This is a changelog!
 
-## [Unreleased]
+## [Unreleased](https://github.com/somehats/changelog-publish/compare/v1.2.3...HEAD)
 
-## [1.2.3] - 2019-06-20
+## [1.2.3](https://github.com/somehats/changelog-publish/compare/v1.0.0...v1.2.3) - 2019-06-20
 
-## [1.0.0] - 2019-06-19
+## [1.0.0](https://github.com/somehats/changelog-publish/releases/tag/v1.0.0) - 2019-06-19
 
 ### Added
 
@@ -38,13 +62,20 @@ Object {
 
 This is a changelog!
 
-## [Unreleased]
+## [Unreleased](https://github.com/somehats/changelog-publish/compare/v1.2.3...HEAD)
 
-## [1.2.3] - 2019-06-20
+## [1.2.3](https://github.com/somehats/changelog-publish/releases/tag/v1.2.3) - 2019-06-20
 
 -   Something
 ",
   "isValid": true,
+}
+`;
+
+exports[`changelogPublish fixture: unlinked-version.md 1`] = `
+Object {
+  "isValid": false,
+  "message": "Version heading \\"1.2.0 - 2019-06-19\\" isn't correctly linked",
 }
 `;
 
@@ -54,13 +85,13 @@ Object {
 
 This is a changelog!
 
-## [Unreleased]
+## [Unreleased](https://github.com/somehats/changelog-publish/compare/v1.2.3...HEAD)
 
-## [1.2.3] - 2019-06-20
+## [1.2.3](https://github.com/somehats/changelog-publish/compare/v1.2.0...v1.2.3) - 2019-06-20
 
 -   Something
 
-## [1.2.0] - 2019-06-19
+## [1.2.0](https://github.com/somehats/changelog-publish/releases/tag/v1.2.0) - 2019-06-19
 
 -   Something else
 ",

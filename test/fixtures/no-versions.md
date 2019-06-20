@@ -2,6 +2,6 @@
 
 This is a changelog!
 
-## [Unreleased]
+## Unreleased
 
 - Something

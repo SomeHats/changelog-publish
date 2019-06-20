@@ -13,7 +13,12 @@ describe("changelogPublish", () => {
       const fixture = await readFileAsync(fixturePath, "utf-8");
 
       expect(
-        changelogPublish(fixture, "1.2.3", new Date("2019-06-20"))
+        changelogPublish(
+          fixture,
+          "1.2.3",
+          new Date("2019-06-20"),
+          "https://github.com/somehats/changelog-publish"
+        )
       ).toMatchSnapshot();
     });
   };
@@ -22,5 +27,7 @@ describe("changelogPublish", () => {
   testFixture("no-title.md");
   testFixture("no-section-unreleased.md");
   testFixture("no-versions.md");
+  testFixture("unlinked-version.md");
   testFixture("valid.md");
+  testFixture("many.md");
 });
