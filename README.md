@@ -3,6 +3,11 @@
 A tiny CLI tool for adding a version to unreleased changes in your changelog
 when you bump the package version on your Node.js project.
 
+It will:
+- Rename the 'Unreleased' section to the new version and add the date
+- Link the new version to a diff between it and the previous version on GitHub
+- Add a new empty 'Unreleased' section at the top and link it to a diff between the version you just released and `HEAD`
+
 ## Usage
 
 This tool assumes you're keeping a changelog with a 2nd-level header called
